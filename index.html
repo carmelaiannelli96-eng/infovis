@@ -1,22 +1,269 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-<script src="https://fb.me/react-with-addons-15.1.0.js"></script>
-<script src="https://fb.me/react-dom-15.1.0.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.0.1/Rx.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carmela Iannelli — Data Viz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --page-plane:      #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --gridline:       #e1e0d9;
+    --border:         rgba(11,11,11,0.10);
+    --series-1:       #2a78d6;
+    --series-2:       #eb6834;
+    --series-3:       #1baf7a;
+    --shadow-rest:    0 1px 2px rgba(11,11,11,0.06), 0 1px 1px rgba(11,11,11,0.04);
+    --shadow-hover:   0 12px 24px rgba(11,11,11,0.10), 0 4px 8px rgba(11,11,11,0.06);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--page-plane);
+    color: var(--text-primary);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  header {
+    padding: 64px 24px 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--gridline);
+    background:
+      radial-gradient(60% 140% at 50% 0%, rgba(42,120,214,0.07), transparent 70%),
+      var(--surface-1);
+  }
+
+  header .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--series-1);
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-family: "Space Grotesk", "Inter", sans-serif;
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 42px);
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+  }
+
+  header p.subtitle {
+    color: var(--text-secondary);
+    font-size: 16px;
+    margin: 0;
+    max-width: 480px;
+    margin-inline: auto;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  section {
+    margin-bottom: 64px;
+  }
+
+  section:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    font-family: "Space Grotesk", "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    margin: 0;
+    color: var(--text-primary);
+  }
+
+  .section-heading .count {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .section-heading::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--gridline);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+  }
+
+  figure.card {
+    margin: 0;
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-rest);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  figure.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(42,120,214,0.25);
+  }
+
+  .card-media {
+    padding: 20px;
+    background: var(--surface-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 240px;
+  }
+
+  .card-media object {
+    width: 100%;
+    height: 260px;
+  }
+
+  .card-media .fallback {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .card-media .fallback a {
+    color: var(--series-1);
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .card-media .fallback a:hover {
+    text-decoration: underline;
+  }
+
+  figcaption {
+    padding: 14px 20px 18px;
+    border-top: 1px solid var(--gridline);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+
+  .empty-state {
+    border: 1px dashed var(--gridline);
+    border-radius: 14px;
+    padding: 40px 24px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+    background: var(--surface-1);
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px 56px;
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+</style>
 </head>
 <body>
-  
-  <h1> Mis Graficos</h1>
-  
-  <object data="https://cdn.jsdelivr.net/gh/carmelaiannelli96-eng/infovis@main/viz.svg" type="image/svg+xml"></object>
 
-<h1> Consumo de vehiculos</h1>
-  <div class="flourish-embed flourish-scatter" data-src="visualisation/30003798"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30003798/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
-  
-<div id="root"></div>
+<header>
+  <span class="eyebrow">Data Visualization · Coursework</span>
+  <h1>Carmela Iannelli</h1>
+</header>
+
+<main>
+
+  <section>
+    <div class="section-heading">
+      <h2>RawGraphs</h2>
+    </div>
+    <div class="grid">
+
+      <figure class="card">
+        <div class="card-media">
+          <object data="https://raw.githubusercontent.com/carmelaiannelli96-eng/infovis/main/UK_Energy_Flows.svg" type="image/svg+xml">
+            <p class="fallback">No se pudo cargar el gráfico.<br><a href="https://github.com/carmelaiannelli96-eng/infovis/blob/main/UK_Energy_Flows.svg" target="_blank" rel="noopener">Ver en GitHub →</a></p>
+          </object>
+        </div>
+        <figcaption>UK Energy Flows</figcaption>
+      </figure>
+
+      <figure class="card">
+        <div class="card-media">
+          <object data="https://raw.githubusercontent.com/carmelaiannelli96-eng/infovis/main/Music_Formats.svg" type="image/svg+xml">
+          </object>
+        </div>
+        <figcaption>Music Formats</figcaption>
+      </figure>
+
+      <figure class="card">
+        <div class="card-media">
+          <object data="https://raw.githubusercontent.com/carmelaiannelli96-eng/infovis/main/Music_Format_Revenue.svg" type="image/svg+xml">
+          </object>
+        </div>
+        <figcaption>Music Format Revenue</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <h2>Inkscape — intervenido</h2>
+      <span class="count">1 gráfico</span>
+    </div>
+    <div class="grid">
+
+      <figure class="card">
+        <div class="card-media">
+          <object data="https://raw.githubusercontent.com/carmelaiannelli96-eng/infovis/main/Te_Leche_Cafe.svg" type="image/svg+xml">
+          </object>
+        </div>
+        <figcaption>Té, Leche, Café</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <h2>Flourish</h2>
+    </div>
+    <div class="empty-state">Próximamente — todavía no hay gráficos cargados en esta sección.</div>
+  </section>
+
+</main>
+
+<footer>Hecho con RawGraphs, Inkscape y Flourish · 2026</footer>
+
 </body>
 </html>
