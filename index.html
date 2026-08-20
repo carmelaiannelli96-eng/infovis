@@ -145,26 +145,14 @@
     min-height: 240px;
   }
 
-  .card-media object {
+  .card-media img {
     width: 100%;
-    height: 260px;
+    height: auto;
+    display: block;
   }
 
-  .card-media .fallback {
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 13px;
-    line-height: 1.6;
-  }
-
-  .card-media .fallback a {
-    color: var(--series-1);
-    font-weight: 500;
-    text-decoration: none;
-  }
-
-  .card-media .fallback a:hover {
-    text-decoration: underline;
+  .card-media .flourish-embed {
+    width: 100%;
   }
 
   figcaption {
@@ -196,8 +184,8 @@
 <body>
 
 <header>
-  <span class="eyebrow">Data Visualization · Coursework</span>
   <h1>Carmela Iannelli</h1>
+  <p class="subtitle">Selección de gráficos hechos en clase, explorando distintas herramientas de visualización de datos.</p>
 </header>
 
 <main>
@@ -210,27 +198,23 @@
 
       <figure class="card">
         <div class="card-media">
-          <object data="https://raw.githubusercontent.com/carmelaiannelli96-eng/infovis/main/UK_Energy_Flows.svg" type="image/svg+xml">
-            <p class="fallback">No se pudo cargar el gráfico.<br><a href="https://github.com/carmelaiannelli96-eng/infovis/blob/main/UK_Energy_Flows.svg" target="_blank" rel="noopener">Ver en GitHub →</a></p>
-          </object>
+          <img src="https://github.com/carmelaiannelli96-eng/infovis/blob/main/Music_Format_Revenue.svg" alt="UK Energy Flows">
         </div>
-        <figcaption>UK Energy Flows</figcaption>
+        <figcaption>Flujos de Energia en Reino Unido</figcaption>
       </figure>
 
       <figure class="card">
         <div class="card-media">
-          <object data="https://raw.githubusercontent.com/carmelaiannelli96-eng/infovis/main/Music_Formats.svg" type="image/svg+xml">
-          </object>
+          <img src="https://github.com/carmelaiannelli96-eng/infovis/blob/main/Music_Format_Revenue.svg" alt="Music Formats">
         </div>
-        <figcaption>Music Formats</figcaption>
+        <figcaption>Formatos de Musica </figcaption>
       </figure>
 
       <figure class="card">
         <div class="card-media">
-          <object data="https://raw.githubusercontent.com/carmelaiannelli96-eng/infovis/main/Music_Format_Revenue.svg" type="image/svg+xml">
-          </object>
+          <img src="https://github.com/carmelaiannelli96-eng/infovis/blob/main/Music_Format_Revenue.svg" alt="Music Format Revenue">
         </div>
-        <figcaption>Music Format Revenue</figcaption>
+        <figcaption>Formatos de Musica: revenue</figcaption>
       </figure>
 
     </div>
@@ -238,17 +222,15 @@
 
   <section>
     <div class="section-heading">
-      <h2>Inkscape — intervenido</h2>
-      <span class="count">1 gráfico</span>
+      <h2>Intervenido en Inkscape</h2>
     </div>
     <div class="grid">
 
       <figure class="card">
         <div class="card-media">
-          <object data="https://raw.githubusercontent.com/carmelaiannelli96-eng/infovis/main/Te_Leche_Cafe.svg" type="image/svg+xml">
-          </object>
+          <img src="https://github.com/carmelaiannelli96-eng/infovis/blob/main/Te_Leche_Cafe.svg" alt="Té, Leche, Café">
         </div>
-        <figcaption>Té, Leche, Café</figcaption>
+        <figcaption>Te, Leche, Cafe</figcaption>
       </figure>
 
     </div>
@@ -257,13 +239,28 @@
   <section>
     <div class="section-heading">
       <h2>Flourish</h2>
+      <span class="count">2 gráficos</span>
     </div>
-    <div class="empty-state">Próximamente — todavía no hay gráficos cargados en esta sección.</div>
+    <div class="grid">
+
+      <figure class="card">
+        <div class="card-media">
+          <div class="flourish-embed flourish-chart" data-src="visualisation/30014147"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30014147/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+        </div>
+        <figcaption>Flourish — Tasas segun Muertos, Heridos y Otros</figcaption>
+      </figure>
+
+      <figure class="card">
+        <div class="card-media">
+          <div class="flourish-embed flourish-chart" data-src="visualisation/30014225"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30014225/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+        </div>
+        <figcaption>Flourish — Totalidad de Muertos, Heridos y Otros</figcaption>
+      </figure>
+
+    </div>
   </section>
 
 </main>
-
-<footer>Hecho con RawGraphs, Inkscape y Flourish · 2026</footer>
 
 </body>
 </html>
