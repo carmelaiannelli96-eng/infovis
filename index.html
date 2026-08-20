@@ -23,7 +23,9 @@
     --shadow-rest:    0 1px 2px rgba(11,11,11,0.06), 0 1px 1px rgba(11,11,11,0.04);
     --shadow-hover:   0 12px 24px rgba(11,11,11,0.10), 0 4px 8px rgba(11,11,11,0.06);
   }
+
   * { box-sizing: border-box; }
+
   body {
     margin: 0;
     background: var(--page-plane);
@@ -31,6 +33,7 @@
     font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
     -webkit-font-smoothing: antialiased;
   }
+
   header {
     padding: 64px 24px 40px;
     text-align: center;
@@ -39,6 +42,7 @@
       radial-gradient(60% 140% at 50% 0%, rgba(42,120,214,0.07), transparent 70%),
       var(--surface-1);
   }
+
   header .eyebrow {
     display: inline-block;
     font-size: 12px;
@@ -48,6 +52,7 @@
     color: var(--series-1);
     margin-bottom: 14px;
   }
+
   h1 {
     font-family: "Space Grotesk", "Inter", sans-serif;
     font-weight: 700;
@@ -55,6 +60,7 @@
     letter-spacing: -0.01em;
     margin: 0 0 10px;
   }
+
   header p.subtitle {
     color: var(--text-secondary);
     font-size: 16px;
@@ -62,23 +68,28 @@
     max-width: 480px;
     margin-inline: auto;
   }
+
   main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 56px 24px 80px;
   }
+
   section {
     margin-bottom: 64px;
   }
+
   section:last-child {
     margin-bottom: 0;
   }
+
   .section-heading {
     display: flex;
     align-items: baseline;
     gap: 12px;
     margin-bottom: 24px;
   }
+
   h2 {
     font-family: "Space Grotesk", "Inter", sans-serif;
     font-weight: 600;
@@ -87,22 +98,26 @@
     margin: 0;
     color: var(--text-primary);
   }
+
   .section-heading .count {
     font-size: 13px;
     color: var(--text-muted);
     font-weight: 500;
   }
+
   .section-heading::after {
     content: "";
     flex: 1;
     height: 1px;
     background: var(--gridline);
   }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 24px;
   }
+
   figure.card {
     margin: 0;
     background: var(--surface-1);
@@ -114,11 +129,13 @@
     display: flex;
     flex-direction: column;
   }
+
   figure.card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
     border-color: rgba(42,120,214,0.25);
   }
+
   .card-media {
     padding: 20px;
     background: var(--surface-1);
@@ -127,15 +144,17 @@
     justify-content: center;
     min-height: 240px;
   }
-  .card-media object,
+
   .card-media img {
     width: 100%;
-    aspect-ratio: 805 / 600;
+    height: auto;
     display: block;
   }
+
   .card-media .flourish-embed {
     width: 100%;
   }
+
   figcaption {
     padding: 14px 20px 18px;
     border-top: 1px solid var(--gridline);
@@ -143,6 +162,7 @@
     font-weight: 500;
     color: var(--text-secondary);
   }
+
   .empty-state {
     border: 1px dashed var(--gridline);
     border-radius: 14px;
@@ -152,6 +172,7 @@
     font-size: 14px;
     background: var(--surface-1);
   }
+
   footer {
     text-align: center;
     padding: 32px 24px 56px;
@@ -161,74 +182,84 @@
 </style>
 </head>
 <body>
+
 <header>
-  <span class="eyebrow">Data Visualization · Coursework</span>
   <h1>Carmela Iannelli</h1>
 </header>
+
 <main>
+
   <section>
     <div class="section-heading">
       <h2>RawGraphs</h2>
     </div>
     <div class="grid">
+
       <figure class="card">
         <div class="card-media">
-          <object data="UK_Energy_Flows.svg" type="image/svg+xml">
-          </object>
+            <object data="https://github.com/carmelaiannelli96-eng/infovis/blob/main/UK_Energy_Flows.svg" type="image/svg+xml"></object>  
         </div>
-        <figcaption>Flujos de Energía en Reino Unido</figcaption>
+        <figcaption>UK Energy Flows</figcaption>
       </figure>
+
       <figure class="card">
         <div class="card-media">
-          <object data="Music_Formats.svg" type="image/svg+xml">
-          </object>
+          <object data="https://github.com/carmelaiannelli96-eng/infovis/blob/main/Music_Formats.svg" type="image/svg+xml"></object> 
         </div>
-        <figcaption>Formatos de Música</figcaption>
+        <figcaption>Music Formats</figcaption>
       </figure>
+
       <figure class="card">
         <div class="card-media">
-          <object data="Music_Format_Revenue.svg" type="image/svg+xml">
-          </object>
+          <object data="https://github.com/carmelaiannelli96-eng/infovis/blob/main/Music_Format_Revenue.svg" type="image/svg+xml">
         </div>
-        <figcaption>Formatos de Música: revenue</figcaption>
+        <figcaption>Music Format Revenue</figcaption>
       </figure>
+
     </div>
   </section>
+
   <section>
     <div class="section-heading">
       <h2>Intervenido en Inkscape</h2>
-      <span class="count">1 gráfico</span>
     </div>
     <div class="grid">
+
       <figure class="card">
         <div class="card-media">
-          <object data="Te_Leche_Cafe.svg" type="image/svg+xml">
-          </object>
+           <object data="https://github.com/carmelaiannelli96-eng/infovis/blob/main/Te_Leche_Cafe.svg" type="image/svg"></object>  
         </div>
         <figcaption>Té, Leche, Café</figcaption>
       </figure>
+
     </div>
   </section>
+
   <section>
     <div class="section-heading">
       <h2>Flourish</h2>
       <span class="count">2 gráficos</span>
     </div>
     <div class="grid">
+
       <figure class="card">
         <div class="card-media">
           <div class="flourish-embed flourish-chart" data-src="visualisation/30014147"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30014147/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
         </div>
-        <figcaption>Flourish — Tasas según Muertos, Heridos y Otros</figcaption>
+        <figcaption>Flourish — gráfico 1</figcaption>
       </figure>
+
       <figure class="card">
         <div class="card-media">
           <div class="flourish-embed flourish-chart" data-src="visualisation/30014225"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30014225/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
         </div>
-        <figcaption>Flourish — Totalidad de Muertos, Heridos y Otros</figcaption>
+        <figcaption>Flourish — gráfico 2</figcaption>
       </figure>
+
     </div>
   </section>
+
 </main>
+
 </body>
 </html>
