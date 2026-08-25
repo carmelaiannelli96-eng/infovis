@@ -103,7 +103,6 @@
     flex-wrap: wrap;
     gap: 24px;
   }
-
   .grid figure.card {
     flex: 1 1 100%;
   }
@@ -138,11 +137,19 @@
     height: 100%;
     display: block;
   }
-  .card-media .flourish-embed {
-    position: absolute;
-    inset: 0;
+  /* Embeds (Flourish, Datawrapper) manage their own height dynamically —
+     they don't fit the fixed SVG aspect-ratio box, so this variant
+     drops the ratio lock and just lets the embed size itself. */
+  .card-media.embed {
+    position: static;
+    padding-top: 0;
+    overflow: visible;
+  }
+  .card-media.embed .flourish-embed,
+  .card-media.embed div[id^="datawrapper-vis-"] {
+    position: static;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   figcaption {
     padding: 14px 20px 18px;
@@ -165,12 +172,6 @@
     padding: 32px 24px 56px;
     color: var(--text-muted);
     font-size: 13px;
-  }
-  .card-media div[id^="datawrapper-vis-"] {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
   }
 </style>
 </head>
@@ -227,34 +228,32 @@
     </div>
     <div class="grid">
       <figure class="card">
-        <div class="card-media">
+        <div class="card-media embed">
           <div class="flourish-embed flourish-chart" data-src="visualisation/30014147"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30014147/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
         </div>
         <figcaption>Flourish — Tasas según Muertos, Heridos y Otros</figcaption>
       </figure>
       <figure class="card">
-        <div class="card-media">
+        <div class="card-media embed">
           <div class="flourish-embed flourish-chart" data-src="visualisation/30014225"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30014225/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
         </div>
         <figcaption>Flourish — Totalidad de Muertos, Heridos y Otros</figcaption>
       </figure>
     </div>
   </section>
-
   <section>
     <div class="section-heading">
       <h2>Datawrapper</h2>
     </div>
     <div class="grid">
       <figure class="card">
-        <div class="card-media">
+        <div class="card-media embed">
           <div style="min-height:449px" id="datawrapper-vis-dFBcD"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/dFBcD/embed.js" charset="utf-8" data-target="#datawrapper-vis-dFBcD"></script><noscript><img src="https://datawrapper.dwcdn.net/dFBcD/full.png" alt="Pizza toppings: male's  and female's  choices (Range Plot)" /></noscript></div>
         </div>
         <figcaption>Pizza toppings: elección de hombres y mujeres</figcaption>
       </figure>
     </div>
   </section>
-  
 </main>
 </body>
 </html>
