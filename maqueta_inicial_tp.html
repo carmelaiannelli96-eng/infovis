@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparativa · bubbles jerárquicos</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  :root {
+    color-scheme: light;
+    --page: #eef2f6;
+    --surface: #ffffff;
+    --ink: #12151b;
+    --ink-2: #545a66;
+    --muted: #868c99;
+    --border: rgba(18,21,27,0.10);
+    --accent: #e8623d;
+    --shadow-soft: 0 1px 2px rgba(18,21,27,0.04), 0 8px 24px -12px rgba(18,21,27,0.10);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page: #0a0c11;
+      --surface: #14171f;
+      --ink: #f3f5f8;
+      --ink-2: #b7bcc8;
+      --muted: #7a8090;
+      --border: rgba(255,255,255,0.10);
+      --accent: #ff7e56;
+      --shadow-soft: 0 1px 2px rgba(0,0,0,0.3), 0 12px 28px -14px rgba(0,0,0,0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #0a0c11;
+    --surface: #14171f;
+    --ink: #f3f5f8;
+    --ink-2: #b7bcc8;
+    --muted: #7a8090;
+    --border: rgba(255,255,255,0.10);
+    --accent: #ff7e56;
+    --shadow-soft: 0 1px 2px rgba(0,0,0,0.3), 0 12px 28px -14px rgba(0,0,0,0.6);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font-family: 'Manrope', system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .mono { font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 48px 24px 72px; }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; letter-spacing: 0.09em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin-bottom: 14px;
+  }
+  .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+  h1 {
+    font-size: clamp(26px, 3.6vw, 36px);
+    font-weight: 800; letter-spacing: -0.02em; margin: 0 0 12px; text-wrap: balance;
+  }
+  .lede { font-size: 15.5px; color: var(--ink-2); max-width: 68ch; margin: 0 0 40px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .card-head h2 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .card-head .id {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    color: var(--muted);
+  }
+  .embed-box {
+    padding: 12px;
+    min-height: 380px;
+  }
+
+  footer.note {
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 68ch;
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 860px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="grid">
+    <div class="card">
+      <div class="embed-box">
+        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/30062771"><noscript><img src="https://public.flourish.studio/visualisation/30062771/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="embed-box">
+        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/30062847"><noscript><img src="https://public.flourish.studio/visualisation/30062847/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="embed-box">
+        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/30062894"><noscript><img src="https://public.flourish.studio/visualisation/30062894/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="embed-box">
+        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/30062913"><noscript><img src="https://public.flourish.studio/visualisation/30062913/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="embed-box">
+        <div class="flourish-embed flourish-scatter" data-src="visualisation/30062924"><noscript><img src="https://public.flourish.studio/visualisation/30062924/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://public.flourish.studio/resources/embed.js"></script>
+</body>
+</html>
