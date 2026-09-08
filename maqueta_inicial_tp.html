@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Comparativa · bubbles jerárquicos</title>
+<title>Patrones de Hábito Digital - Carmela </title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
@@ -11,148 +11,272 @@
     color-scheme: light;
     --page: #eef2f6;
     --surface: #ffffff;
+    --surface-2: #f5f7fb;
     --ink: #12151b;
     --ink-2: #545a66;
     --muted: #868c99;
     --border: rgba(18,21,27,0.10);
     --accent: #e8623d;
+    --accent-soft: #fce4db;
+    --muted-fill: #cfd3db;
+
+    --c-enganchada: #e15759;
+    --c-binge:      #4e79a7;
+    --c-chequeo:    #f28e2b;
+    --c-normal:     #76b7b2;
+
+    --seq-100:#cde2fb; --seq-200:#9ec5f4; --seq-300:#6da7ec; --seq-400:#3987e5;
+    --seq-500:#256abf; --seq-600:#184f95; --seq-700:#0d366b;
+
     --shadow-soft: 0 1px 2px rgba(18,21,27,0.04), 0 8px 24px -12px rgba(18,21,27,0.10);
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       color-scheme: dark;
-      --page: #0a0c11;
-      --surface: #14171f;
-      --ink: #f3f5f8;
-      --ink-2: #b7bcc8;
-      --muted: #7a8090;
+      --page: #0a0c11; --surface: #14171f; --surface-2: #191d27;
+      --ink: #f3f5f8; --ink-2: #b7bcc8; --muted: #7a8090;
       --border: rgba(255,255,255,0.10);
-      --accent: #ff7e56;
+      --accent: #ff7e56; --accent-soft: rgba(255,126,86,0.16);
+      --muted-fill: #383e4a;
+      --c-enganchada: #ff7d7b; --c-binge: #6f97c9; --c-chequeo: #ffa94d; --c-normal: #8fcac5;
+      --seq-100:#1c2a3d; --seq-200:#184f95; --seq-300:#1c5cab; --seq-400:#256abf;
+      --seq-500:#2a78d6; --seq-600:#3987e5; --seq-700:#86b6ef;
       --shadow-soft: 0 1px 2px rgba(0,0,0,0.3), 0 12px 28px -14px rgba(0,0,0,0.6);
     }
   }
   :root[data-theme="dark"] {
     color-scheme: dark;
-    --page: #0a0c11;
-    --surface: #14171f;
-    --ink: #f3f5f8;
-    --ink-2: #b7bcc8;
-    --muted: #7a8090;
+    --page: #0a0c11; --surface: #14171f; --surface-2: #191d27;
+    --ink: #f3f5f8; --ink-2: #b7bcc8; --muted: #7a8090;
     --border: rgba(255,255,255,0.10);
-    --accent: #ff7e56;
+    --accent: #ff7e56; --accent-soft: rgba(255,126,86,0.16);
+    --muted-fill: #383e4a;
+    --c-enganchada: #e66767; --c-binge: #d95926; --c-chequeo: #9085e9; --c-normal: #6a7080;
+    --seq-100:#1c2a3d; --seq-200:#184f95; --seq-300:#1c5cab; --seq-400:#256abf;
+    --seq-500:#2a78d6; --seq-600:#3987e5; --seq-700:#86b6ef;
     --shadow-soft: 0 1px 2px rgba(0,0,0,0.3), 0 12px 28px -14px rgba(0,0,0,0.6);
   }
 
   * { box-sizing: border-box; }
+  html,body { margin:0; padding:0; }
   body {
-    margin: 0;
-    background: var(--page);
-    color: var(--ink);
+    background: var(--page); color: var(--ink);
     font-family: 'Manrope', system-ui, -apple-system, "Segoe UI", sans-serif;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased; line-height: 1.5;
   }
   .mono { font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; }
-
-  .wrap { max-width: 1180px; margin: 0 auto; padding: 48px 24px 72px; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 56px 24px 80px; }
 
   .eyebrow {
-    display: inline-flex; align-items: center; gap: 8px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px; letter-spacing: 0.09em; text-transform: uppercase;
-    color: var(--accent); font-weight: 600; margin-bottom: 14px;
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.09em;
+    text-transform:uppercase; color:var(--accent); font-weight:600; margin-bottom:14px;
   }
-  .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
-  h1 {
-    font-size: clamp(26px, 3.6vw, 36px);
-    font-weight: 800; letter-spacing: -0.02em; margin: 0 0 12px; text-wrap: balance;
-  }
-  .lede { font-size: 15.5px; color: var(--ink-2); max-width: 68ch; margin: 0 0 40px; }
+  .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+  h1 { font-size:clamp(28px,4vw,40px); font-weight:800; letter-spacing:-.02em; margin:0 0 12px; text-wrap:balance; }
+  .lede { font-size:16px; color:var(--ink-2); max-width:66ch; margin:0; }
+  .lede b { color:var(--ink); font-weight:700; }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  .stats {
+    display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+    background:var(--border); border:1px solid var(--border); border-radius:16px;
+    overflow:hidden; margin:36px 0 48px; box-shadow:var(--shadow-soft);
   }
-  .card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    box-shadow: var(--shadow-soft);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-  .card-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 20px;
-    border-bottom: 1px solid var(--border);
-  }
-  .card-head h2 {
-    font-size: 15px;
-    font-weight: 700;
-    margin: 0;
-  }
-  .card-head .id {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11.5px;
-    color: var(--muted);
-  }
-  .embed-box {
-    padding: 12px;
-    min-height: 380px;
-  }
+  .stat { background:var(--surface); padding:20px 18px 18px; display:flex; flex-direction:column; gap:6px; min-width:0; }
+  .stat .label { font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  .stat .value { font-family:'IBM Plex Mono',monospace; font-variant-numeric:tabular-nums; font-size:22px; font-weight:600; line-height:1.15; }
+  .stat .sub { font-size:12px; color:var(--ink-2); }
 
-  footer.note {
-    font-size: 12.5px;
-    color: var(--muted);
-    line-height: 1.6;
-    max-width: 68ch;
-    margin-top: 32px;
-    padding-top: 16px;
-    border-top: 1px solid var(--border);
+  section.panel {
+    background:var(--surface); border:1px solid var(--border); border-radius:16px;
+    padding:28px 28px 24px; margin-bottom:28px; box-shadow:var(--shadow-soft);
   }
+  .panel-head { margin-bottom:8px; }
+  .panel-head h2 { font-size:19px; font-weight:700; margin:0 0 6px; letter-spacing:-.01em; }
+  .panel-head p { font-size:13.5px; color:var(--ink-2); margin:0 0 20px; max-width:70ch; }
 
-  @media (max-width: 860px) {
-    .grid { grid-template-columns: 1fr; }
+  /* ---- Quadrant scatter (live Tableau embed) ---- */
+  .tableau-embed-note { font-size:12px; color:var(--muted); margin:10px 0 20px; }
+  .calc-note { margin-top:6px; }
+  .calc-p { font-size:13.5px; color:var(--ink-2); line-height:1.6; margin:0 0 14px; max-width:74ch; }
+  .calc-p b { color:var(--ink); }
+  .calc-legend { display:flex; flex-direction:column; gap:10px; }
+  .calc-legend .item { display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--ink-2); line-height:1.5; }
+  .calc-legend .sw { width:9px; height:9px; border-radius:50%; margin-top:5px; flex:none; }
+  .calc-legend b { color:var(--ink); }
+
+  .legend-row { display:flex; flex-wrap:wrap; gap:16px 22px; margin-top:16px; }
+  .legend-item { display:flex; align-items:center; gap:7px; font-size:12.5px; color:var(--ink-2); }
+  .legend-item .sw { width:9px; height:9px; border-radius:50%; }
+
+  /* ---- Category stacked bar ---- */
+  .stackbar { display:flex; width:100%; height:40px; border-radius:8px; overflow:hidden; margin-bottom:16px; }
+  .stackbar div { height:100%; }
+  .cat-legend { display:flex; flex-direction:column; gap:8px; }
+  .cat-row { display:grid; grid-template-columns:16px 1fr 60px 50px; align-items:center; gap:10px; font-size:13px; }
+  .cat-row .sw { width:10px; height:10px; border-radius:3px; }
+  .cat-row .pct { font-family:'IBM Plex Mono',monospace; font-variant-numeric:tabular-nums; text-align:right; color:var(--ink-2); }
+  .cat-row .hrs { font-family:'IBM Plex Mono',monospace; font-variant-numeric:tabular-nums; text-align:right; color:var(--muted); font-size:12px; }
+
+  /* ---- Trend small multiples ---- */
+  .trend-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .trend-card { background:var(--surface-2); border-radius:10px; padding:14px 16px 10px; }
+  .trend-card h3 { font-size:13px; font-weight:700; margin:0 0 2px; }
+  .trend-card .cur { font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--muted); margin-bottom:8px; }
+  .trend-svg { width:100%; height:70px; display:block; }
+  .trend-ticks { display:flex; justify-content:space-between; font-family:'IBM Plex Mono',monospace; font-size:9.5px; color:var(--muted); margin-top:2px; }
+
+  /* ---- Heatmap ---- */
+  .heatmap { overflow-x:auto; }
+  .hm-grid { display:grid; grid-template-columns: 112px repeat(12, 1fr); gap:3px; min-width:640px; }
+  .hm-cell { aspect-ratio:1.3/1; border-radius:4px; position:relative; cursor:default; }
+  .hm-row-label { font-size:12px; font-weight:600; display:flex; align-items:center; padding-right:6px; }
+  .hm-col-label { font-family:'IBM Plex Mono',monospace; font-size:10px; color:var(--muted); text-align:center; padding-bottom:4px; }
+  .hm-legend { display:flex; align-items:center; gap:8px; margin-top:14px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--muted); }
+  .hm-legend .grad { width:120px; height:10px; border-radius:5px; background:linear-gradient(to right, var(--surface-2), var(--seq-700)); }
+
+  .tooltip {
+    position:fixed; pointer-events:none; background:var(--ink); color:var(--page);
+    font-family:'IBM Plex Mono',monospace; font-size:12px; padding:8px 10px; border-radius:8px;
+    line-height:1.45; box-shadow:0 10px 30px -10px rgba(0,0,0,.45); opacity:0;
+    transform:translate(-50%,-100%); transition:opacity .1s ease; z-index:20; white-space:nowrap;
+  }
+  .tooltip.show { opacity:1; }
+  .tooltip b { font-weight:600; }
+
+  footer.note { font-size:12.5px; color:var(--muted); line-height:1.6; max-width:70ch; margin-top:8px; }
+  footer.note b { color:var(--ink-2); }
+
+  /* ---- Conclusions ---- */
+  .conclusion {
+    margin-top:16px; padding:12px 14px; background:var(--accent-soft);
+    border-left:3px solid var(--accent); border-radius:0 8px 8px 0;
+    font-size:13px; color:var(--ink-2); line-height:1.55;
+  }
+  .conclusion b { color:var(--ink); }
+  .final-conclusion {
+    margin-top:8px; padding:24px 28px; background:var(--surface);
+    border:1px solid var(--border); border-radius:16px; box-shadow:var(--shadow-soft);
+  }
+  .final-conclusion h2 { font-size:19px; font-weight:700; margin:0 0 10px; letter-spacing:-.01em; }
+  .final-conclusion p { font-size:14.5px; color:var(--ink-2); line-height:1.65; margin:0; }
+  .final-conclusion b { color:var(--ink); }
+
+  @media (max-width:720px) {
+    .stats { grid-template-columns:repeat(2,1fr); }
+    .trend-grid { grid-template-columns:repeat(2,1fr); }
+    .hm-grid { grid-template-columns: 88px repeat(12,1fr); }
   }
 </style>
 </head>
 <body>
+
 <div class="wrap">
-  <div class="grid">
-    <div class="card">
-      <div class="embed-box">
-        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/30062771"><noscript><img src="https://public.flourish.studio/visualisation/30062771/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
-      </div>
-    </div>
 
-    <div class="card">
-      <div class="embed-box">
-        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/30062847"><noscript><img src="https://public.flourish.studio/visualisation/30062847/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
-      </div>
-    </div>
+  <header>
+    <div class="eyebrow">Carmela Iannelli: Uso de pantalla</div>
+    <h1>Análisis de hábitos de uso de pantalla</h1>
+    <p class="lede">No todas las horas de pantalla son iguales. En este caso, el foco está en qué apps ocupan sesiones largas, cuáles reviso con más frecuencia, y a qué hora del día cae cada una.</p>
+  </header>
 
-    <div class="card">
-      <div class="embed-box">
-        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/30062894"><noscript><img src="https://public.flourish.studio/visualisation/30062894/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
-      </div>
+  <div class="stats">
+    <div class="stat">
+      <div class="label">Redes sociales</div>
+      <div class="value">56%</div>
+      <div class="sub">del tiempo total de agosto</div>
     </div>
-
-    <div class="card">
-      <div class="embed-box">
-        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/30062913"><noscript><img src="https://public.flourish.studio/visualisation/30062913/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
-      </div>
+    <div class="stat">
+      <div class="label">Max (HBO)</div>
+      <div class="value mono">23.7 min</div>
+      <div class="sub">promedio por apertura</div>
     </div>
-
-    <div class="card">
-      <div class="embed-box">
-        <div class="flourish-embed flourish-scatter" data-src="visualisation/30062924"><noscript><img src="https://public.flourish.studio/visualisation/30062924/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
-      </div>
+    <div class="stat">
+      <div class="label">WhatsApp</div>
+      <div class="value mono">436×</div>
+      <div class="sub">aperturas este mes, ~1 min cada una</div>
+    </div>
+    <div class="stat">
+      <div class="label">Pico de hoy</div>
+      <div class="value mono">22–00h</div>
+      <div class="sub">92 min de TikTok seguidos</div>
     </div>
   </div>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>Cuatro tipos de hábito</h2>
+      <p>Cada punto es una app: cuántas veces la abrí este mes (eje horizontal, "Aperturas Mes") contra cuántas horas le dediqué en total (eje vertical, "Horas Mes").</p>
+    </div>
+
+    <div class='tableauPlaceholder' id='viz1788830067861' style='position: relative'><noscript><a href='#'><img alt='Uso de aplicaciones segun tiempo y cantidad de aperturas ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;Usodeappsseguntiempoyaperturas&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Usodeappsseguntiempoyaperturas&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;Usodeappsseguntiempoyaperturas&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1788830067861');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+    <div class="calc-note">
+      <div class="calc-legend">
+        <div class="item"><span class="sw" style="background:var(--c-enganchada)"></span><span><b>Enganchada en serio</b>: arriba de las dos medianas, la abrís más seguido que el resto y además le dedicás más horas en total.</span></div>
+        <div class="item"><span class="sw" style="background:var(--c-binge)"></span><span><b>Binge</b>: pocas aperturas pero muchas horas, sesiones largas y espaciadas en el tiempo.</span></div>
+        <div class="item"><span class="sw" style="background:var(--c-chequeo)"></span><span><b>Chequeo compulsivo</b>: muchas aperturas pero pocas horas, la revisás todo el tiempo, por poquito rato cada vez.</span></div>
+        <div class="item"><span class="sw" style="background:var(--c-normal)"></span><span><b>Uso normal</b>: debajo de las dos medianas en los dos sentidos, ni mucho tiempo ni mucha frecuencia.</span></div>
+      </div>
+    </div>
+    <div class="conclusion"><b>Mi conclusión:</b> trece de mis apps más usadas caen en "Enganchada en serio": las abro seguido y además les dedico mucho tiempo. Esto no está repartido parejo entre muchas apps, se concentra en pocas.</div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>En qué categorías se me va el mes</h2>
+    </div>
+    <div class="flourish-embed flourish-hierarchy" data-src="visualisation/30182943"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30182943/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+    <div class="conclusion"><b>Mi conclusión:</b> más del 80% de mis 112 horas de agosto son redes sociales y streaming. La mayor parte de mi tiempo de pantalla se concentra en contenido de entretenimiento.</div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>¿Se está acelerando o frenando?</h2>
+      <p>Valores comparados con el promedio de uso como base.</p>
+    </div>
+    <div class="flourish-embed flourish-chart" data-src="visualisation/30183021"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30183021/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+    <div class="conclusion"><b>Mi conclusión:</b> la mayoría de mis apps está hoy en o por debajo de mi propio promedio histórico. La excepción es Max (HBO), que vengo usando por encima de mi base hace semanas.</div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <p>Minutos activos por bloque de 2 horas, ordenado de 00h a 22h.</p>
+    </div>
+    <iframe title="A qué hora cae cada app — hoy" aria-label="Heatmap" id="datawrapper-chart-s4Cep" src="https://datawrapper.dwcdn.net/s4Cep/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe>
+    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+    <div class="conclusion"><b>Mi conclusión:</b> casi todo lo pesado de mi día se concentra entre las 22:00 y las 00:00, con TikTok y Max uno después del otro. Ahí es donde se concentra la mayor parte de mi uso, no en el día entero.</div>
+  </section>
+
+  <section class="final-conclusion">
+    <h2>Conclusión general</h2>
+    <p>Mi uso no está distribuido parejo entre muchas apps: se concentra en <b>TikTok, Max, Instagram y WhatsApp</b>, que juntas explican la mayoría de mi tiempo de pantalla, sobre todo de noche. El patrón más claro es ese cruce entre frecuencia, duración y horario nocturno, concentrado en esas dos apps en particular (TikTok y Max), más que un uso parejo repartido en el resto.</p>
+  </section>
+
 </div>
-<script src="https://public.flourish.studio/resources/embed.js"></script>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+const TREND = {"TikTok": {"year": 2.193, "month": 2.016, "week": 2.737, "day": 1.768}, "Max (HBO)": {"year": 0.808, "month": 1.282, "week": 1.139, "day": 0.589}, "WhatsApp": {"year": 0.65, "month": 0.347, "week": 0.521, "day": 0.008}, "Instagram": {"year": 0.526, "month": 0.35, "week": 0.288, "day": 0.366}, "Chrome": {"year": 0.173, "month": 0.155, "week": 0.069, "day": 0.003}, "Mercado Pago": {"year": 0.048, "month": 0.175, "week": 0.062, "day": 0.018}};
+const HEATMAP = {"labels": ["16:00", "18:00", "20:00", "22:00", "00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00", "14:00"], "rows": [{"pkg": "com.zhiliaoapp.musically", "name": "TikTok", "values": [27.7, 58.59, 28.11, 92.6, 11.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.6]}, {"pkg": "com.wbd.stream", "name": "Max (HBO)", "values": [0.0, 0.0, 0.0, 0.0, 35.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, {"pkg": "com.instagram.android", "name": "Instagram", "values": [2.7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.87, 16.63, 0.0, 4.4]}, {"pkg": "com.mosync.app_Banco_Galicia", "name": "Banco Galicia", "values": [0.0, 0.0, 4.3, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 1.9, 0.0, 0.0]}, {"pkg": "com.mercadopago.wallet", "name": "Mercado Pago", "values": [0.0, 0.6, 2.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.1, 0.0, 0.0]}, {"pkg": "com.whatsapp", "name": "WhatsApp", "values": [0.3, 1.5, 1.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.2]}]};
+
+const tooltip = document.getElementById('tooltip');
+function showTip(ev, html) {
+  tooltip.innerHTML = html;
+  tooltip.style.left = ev.clientX + 'px';
+  tooltip.style.top = (ev.clientY - 10) + 'px';
+  tooltip.classList.add('show');
+}
+function hideTip(){ tooltip.classList.remove('show'); }
+
+</script>
+
 </body>
 </html>
