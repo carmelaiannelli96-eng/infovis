@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Patrones de Hábito Digital - Carmela </title>
+<title>Patrones de Hábito Digital - Carmela</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
@@ -135,6 +135,10 @@
   .hm-legend { display:flex; align-items:center; gap:8px; margin-top:14px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--muted); }
   .hm-legend .grad { width:120px; height:10px; border-radius:5px; background:linear-gradient(to right, var(--surface-2), var(--seq-700)); }
 
+  /* ---- Alluvial (RAWGraphs export) ---- */
+  .alluvial-embed { width:100%; overflow-x:auto; border-radius:12px; }
+  .alluvial-embed object { width:100%; aspect-ratio:1000/800; min-width:560px; display:block; border:0; }
+
   .tooltip {
     position:fixed; pointer-events:none; background:var(--ink); color:var(--page);
     font-family:'IBM Plex Mono',monospace; font-size:12px; padding:8px 10px; border-radius:8px;
@@ -234,6 +238,19 @@
     </div>
     <div class="flourish-embed flourish-hierarchy" data-src="visualisation/30182943"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30182943/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
     <div class="conclusion"><b>Mi conclusión:</b> más del 80% de mis 112 horas de agosto son redes sociales y streaming. La mayor parte de mi tiempo de pantalla se concentra en contenido de entretenimiento.</div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>Cómo se conecta todo: categoría, app y tipo de hábito</h2>
+      <p>Cada franja conecta una categoría con la app y con el tipo de hábito en el que cae esa app. El grosor es proporcional a las horas del mes, con las 15 apps de más uso.</p>
+    </div>
+    <div class="alluvial-embed">
+      <object type="image/svg+xml" data="alluvial.svg" aria-label="Diagrama de flujo: categoría de app, app y tipo de hábito, con grosor proporcional a horas del mes">
+        Tu navegador no puede mostrar este SVG.
+      </object>
+    </div>
+    <div class="conclusion"><b>Mi conclusión:</b> de las 15 apps de más uso, 13 terminan en "Enganchada en serio" (107 de las 108.7 horas que muestra el gráfico, un 98%). Solo Airbnb y Rappi arman el hilo de "Binge", bien fino en comparación. Redes sociales es la categoría que más aporta, con 62 horas entre TikTok, Instagram, WhatsApp y WhatsApp Business, y TikTok solo ya explica el 42% de todo lo que se ve en este gráfico.</div>
   </section>
 
   <section class="panel">
