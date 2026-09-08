@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1000"
+   height="800"
+   version="1.1"
+   id="svg81"
+   sodipodi:docname="alluvial.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs81" />
+  <sodipodi:namedview
+     id="namedview81"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.61955955"
+     inkscape:cx="456.77611"
+     inkscape:cy="390.60006"
+     inkscape:window-width="1552"
+     inkscape:window-height="815"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g81" />
+  <rect
+     width="1000"
+     height="800"
+     x="0"
+     y="0"
+     fill="#FFFFFF"
+     id="background" />
+  <g
+     transform="translate(50,50)"
+     id="visualization">
+    <g
+       id="g24">
+      <rect
+         x="895"
+         y="32.5"
+         height="619.825532736754"
+         width="5"
+         fill="black"
+         id="rect1">
+        <title
+           id="title1">Enganchada en serio: 106.975</title>
+      </rect>
+      <rect
+         x="0"
+         y="19.999999999999943"
+         height="361.5354406746926"
+         width="5"
+         fill="black"
+         id="rect2">
+        <title
+           id="title2">Redes sociales: 62.397</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="0"
+         height="265.9904718985386"
+         width="5"
+         fill="black"
+         id="rect3">
+        <title
+           id="title3">TikTok: 45.907</title>
+      </rect>
+      <rect
+         x="0"
+         y="386.53544067469255"
+         height="169.11865061482018"
+         width="5"
+         fill="black"
+         id="rect4">
+        <title
+           id="title4">Streaming y entretenimiento: 29.188</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="270.9904718985386"
+         height="169.11865061482007"
+         width="5"
+         fill="black"
+         id="rect5">
+        <title
+           id="title5">Max (HBO): 29.188</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="445.10912251335867"
+         height="46.14433786132747"
+         width="5"
+         fill="black"
+         id="rect6">
+        <title
+           id="title6">Instagram: 7.964</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="496.25346037468614"
+         height="45.785102684606954"
+         width="5"
+         fill="black"
+         id="rect7">
+        <title
+           id="title7">WhatsApp: 7.902</title>
+      </rect>
+      <rect
+         x="0"
+         y="560.6540912895127"
+         height="41.004957187922514"
+         width="5"
+         fill="black"
+         id="rect8">
+        <title
+           id="title8">Navegación y búsqueda: 7.077</title>
+      </rect>
+      <rect
+         x="0"
+         y="606.6590484774352"
+         height="26.38060902594475"
+         width="5"
+         fill="black"
+         id="rect9">
+        <title
+           id="title9">Finanzas y bancos: 4.553</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="547.0385630592931"
+         height="23.14749243545998"
+         width="5"
+         fill="black"
+         id="rect10">
+        <title
+           id="title10">Mercado Pago: 3.995</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="575.1860554947531"
+         height="20.430052147041806"
+         width="5"
+         fill="black"
+         id="rect11">
+        <title
+           id="title11">Chrome: 3.526</title>
+      </rect>
+      <rect
+         x="0"
+         y="638.03965750338"
+         height="14.647524624992002"
+         width="5"
+         fill="black"
+         id="rect12">
+        <title
+           id="title12">Compras: 2.528</title>
+      </rect>
+      <rect
+         x="0"
+         y="657.687182128372"
+         height="12.706495847550286"
+         width="5"
+         fill="black"
+         id="rect13">
+        <title
+           id="title13">Transporte y delivery: 2.193</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="600.6161076417949"
+         height="11.814202021502638"
+         width="5"
+         fill="black"
+         id="rect14">
+        <title
+           id="title14">Google App: 2.039</title>
+      </rect>
+      <rect
+         x="895"
+         y="657.325532736754"
+         height="10.174467263246015"
+         width="5"
+         fill="black"
+         id="rect15">
+        <title
+           id="title15">Binge: 1.756</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="617.4303096632975"
+         height="9.13152642760565"
+         width="5"
+         fill="black"
+         id="rect16">
+        <title
+           id="title16">Mercado Libre: 1.576</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="631.5618360909032"
+         height="8.76070301937807"
+         width="5"
+         fill="black"
+         id="rect17">
+        <title
+           id="title17">Google Maps: 1.512</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="645.3225391102812"
+         height="8.048026781690623"
+         width="5"
+         fill="black"
+         id="rect18">
+        <title
+           id="title18">Uber: 1.389</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="658.3705658919719"
+         height="5.515998197386239"
+         width="5"
+         fill="black"
+         id="rect19">
+        <title
+           id="title19">Airbnb: 0.952</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="668.8865640893581"
+         height="4.6584690658597765"
+         width="5"
+         fill="black"
+         id="rect20">
+        <title
+           id="title20">Rappi: 0.804</title>
+      </rect>
+      <rect
+         x="0"
+         y="675.3936779759223"
+         height="4.606322024077826"
+         width="5"
+         fill="black"
+         id="rect21">
+        <title
+           id="title21">Trabajo y productividad: 0.795</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="678.5450331552179"
+         height="4.606322024077826"
+         width="5"
+         fill="black"
+         id="rect22">
+        <title
+           id="title22">Slack: 0.795</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="688.1513551792957"
+         height="3.6155282302195246"
+         width="5"
+         fill="black"
+         id="rect23">
+        <title
+           id="title23">WhatsApp Business: 0.624</title>
+      </rect>
+      <rect
+         x="447.5"
+         y="696.7668834095152"
+         height="3.2331165904847694"
+         width="5"
+         fill="black"
+         id="rect24">
+        <title
+           id="title24">Banco Galicia: 0.558</title>
+      </rect>
+    </g>
+    <g
+       fill="none"
+       stroke-opacity="1"
+       id="g55">
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g25">
+        <path
+           d="M5,152.99523594926924C226.25,152.99523594926924,226.25,132.9952359492693,447.5,132.9952359492693"
+           stroke="#2b59d9"
+           stroke-width="265.9904718985386"
+           id="path24" />
+        <title
+           id="title25">Redes sociales → TikTok: 45.907</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g26">
+        <path
+           d="M5,471.09476598210256C226.25,471.09476598210256,226.25,355.5497972059486,447.5,355.5497972059486"
+           stroke="#4a95f8"
+           stroke-width="169.11865061482007"
+           id="path25" />
+        <title
+           id="title26">Streaming y entretenimiento → Max (HBO): 29.188</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g27">
+        <path
+           d="M5,309.0626408292023C226.25,309.0626408292023,226.25,468.1812914440224,447.5,468.1812914440224"
+           stroke="#2b59d9"
+           stroke-width="46.1443378613275"
+           id="path26" />
+        <title
+           id="title27">Redes sociales → Instagram: 7.964</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g28">
+        <path
+           d="M5,355.0273611021695C226.25,355.0273611021695,226.25,519.1460117169896,447.5,519.1460117169896"
+           stroke="#2b59d9"
+           stroke-width="45.78510268460697"
+           id="path27" />
+        <title
+           id="title28">Redes sociales → WhatsApp: 7.902</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g29">
+        <path
+           d="M5,618.2327946951652C226.25,618.2327946951652,226.25,558.6123092770231,447.5,558.6123092770231"
+           stroke="#8f56d2"
+           stroke-width="23.14749243545999"
+           id="path28" />
+        <title
+           id="title29">Finanzas y bancos → Mercado Pago: 3.995</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g30">
+        <path
+           d="M5,570.8691173630336C226.25,570.8691173630336,226.25,585.401081568274,447.5,585.401081568274"
+           stroke="#e35b8b"
+           stroke-width="20.43005214704178"
+           id="path29" />
+        <title
+           id="title30">Navegación y búsqueda → Chrome: 3.526</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g31">
+        <path
+           d="M5,586.9912444473058C226.25,586.9912444473058,226.25,606.5232086525461,447.5,606.5232086525461"
+           stroke="#e35b8b"
+           stroke-width="11.81420202150261"
+           id="path30" />
+        <title
+           id="title31">Navegación y búsqueda → Google App: 2.039</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g32">
+        <path
+           d="M5,642.6054207171828C226.25,642.6054207171828,226.25,621.9960728771003,447.5,621.9960728771003"
+           stroke="#e96f2d"
+           stroke-width="9.131526427605744"
+           id="path31" />
+        <title
+           id="title32">Compras → Mercado Libre: 1.576</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g33">
+        <path
+           d="M5,597.2786969677462C226.25,597.2786969677462,226.25,635.9421876005922,447.5,635.9421876005922"
+           stroke="#e35b8b"
+           stroke-width="8.760703019378099"
+           id="path32" />
+        <title
+           id="title33">Navegación y búsqueda → Google Maps: 1.512</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g34">
+        <path
+           d="M5,661.7111955192173C226.25,661.7111955192173,226.25,649.3465525011266,447.5,649.3465525011266"
+           stroke="#e9bb42"
+           stroke-width="8.048026781690595"
+           id="path33" />
+        <title
+           id="title34">Transporte y delivery → Uber: 1.389</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g35">
+        <path
+           d="M5,649.9291830296788C226.25,649.9291830296788,226.25,661.1285649906649,447.5,661.1285649906649"
+           stroke="#e96f2d"
+           stroke-width="5.51599819738621"
+           id="path34" />
+        <title
+           id="title35">Compras → Airbnb: 0.952</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g36">
+        <path
+           d="M5,668.0644434429926C226.25,668.0644434429926,226.25,671.215798622288,447.5,671.215798622288"
+           stroke="#e9bb42"
+           stroke-width="4.658469065859783"
+           id="path35" />
+        <title
+           id="title36">Transporte y delivery → Rappi: 0.804</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g37">
+        <path
+           d="M5,677.6968389879612C226.25,677.6968389879612,226.25,680.8481941672568,447.5,680.8481941672568"
+           stroke="#3c8694"
+           stroke-width="4.6063220240777705"
+           id="path36" />
+        <title
+           id="title37">Trabajo y productividad → Slack: 0.795</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g38">
+        <path
+           d="M5,379.72767655958273C226.25,379.72767655958273,226.25,689.9591192944055,447.5,689.9591192944055"
+           stroke="#2b59d9"
+           stroke-width="3.6155282302195326"
+           id="path37" />
+        <title
+           id="title38">Redes sociales → WhatsApp Business: 0.624</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g39">
+        <path
+           d="M5,631.4230992081376C226.25,631.4230992081376,226.25,698.3834417047576,447.5,698.3834417047576"
+           stroke="#8f56d2"
+           stroke-width="3.2331165904847747"
+           id="path38" />
+        <title
+           id="title39">Finanzas y bancos → Banco Galicia: 0.558</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g40">
+        <path
+           d="M452.5,132.9952359492693C673.75,132.9952359492693,673.75,165.4952359492693,895,165.4952359492693"
+           stroke="#557ae1"
+           stroke-width="265.9904718985386"
+           id="path39" />
+        <title
+           id="title40">TikTok → Enganchada en serio: 45.907</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g41">
+        <path
+           d="M452.5,355.5497972059486C673.75,355.5497972059486,673.75,383.0497972059486,895,383.0497972059486"
+           stroke="#6eaaf9"
+           stroke-width="169.11865061482007"
+           id="path40" />
+        <title
+           id="title41">Max (HBO) → Enganchada en serio: 29.188</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g42">
+        <path
+           d="M452.5,468.1812914440224C673.75,468.1812914440224,673.75,490.6812914440224,895,490.6812914440224"
+           stroke="#557ae1"
+           stroke-width="46.1443378613275"
+           id="path41" />
+        <title
+           id="title42">Instagram → Enganchada en serio: 7.964</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g43">
+        <path
+           d="M452.5,519.1460117169896C673.75,519.1460117169896,673.75,536.6460117169896,895,536.6460117169896"
+           stroke="#557ae1"
+           stroke-width="45.78510268460697"
+           id="path42" />
+        <title
+           id="title43">WhatsApp → Enganchada en serio: 7.902</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g44">
+        <path
+           d="M452.5,558.6123092770231C673.75,558.6123092770231,673.75,571.1123092770231,895,571.1123092770231"
+           stroke="#a578db"
+           stroke-width="23.14749243545999"
+           id="path43" />
+        <title
+           id="title44">Mercado Pago → Enganchada en serio: 3.995</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g45">
+        <path
+           d="M452.5,585.401081568274C673.75,585.401081568274,673.75,592.901081568274,895,592.901081568274"
+           stroke="#e97ca2"
+           stroke-width="20.43005214704178"
+           id="path44" />
+        <title
+           id="title45">Chrome → Enganchada en serio: 3.526</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g46">
+        <path
+           d="M452.5,606.5232086525461C673.75,606.5232086525461,673.75,609.0232086525461,895,609.0232086525461"
+           stroke="#e97ca2"
+           stroke-width="11.81420202150261"
+           id="path45" />
+        <title
+           id="title46">Google App → Enganchada en serio: 2.039</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g47">
+        <path
+           d="M452.5,621.9960728771003C673.75,621.9960728771003,673.75,619.4960728771003,895,619.4960728771003"
+           stroke="#ed8c57"
+           stroke-width="9.131526427605744"
+           id="path46" />
+        <title
+           id="title47">Mercado Libre → Enganchada en serio: 1.576</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g48">
+        <path
+           d="M452.5,635.9421876005922C673.75,635.9421876005922,673.75,628.4421876005923,895,628.4421876005923"
+           stroke="#e97ca2"
+           stroke-width="8.760703019378099"
+           id="path47" />
+        <title
+           id="title48">Google Maps → Enganchada en serio: 1.512</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g49">
+        <path
+           d="M452.5,649.3465525011266C673.75,649.3465525011266,673.75,636.8465525011267,895,636.8465525011267"
+           stroke="#edc968"
+           stroke-width="8.048026781690595"
+           id="path48" />
+        <title
+           id="title49">Uber → Enganchada en serio: 1.389</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g50">
+        <path
+           d="M452.5,661.1285649906649C673.75,661.1285649906649,673.75,660.083531835447,895,660.083531835447"
+           stroke="#ed8c57"
+           stroke-width="5.51599819738621"
+           id="path49" />
+        <title
+           id="title50">Airbnb → Binge: 0.952</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g51">
+        <path
+           d="M452.5,671.215798622288C673.75,671.215798622288,673.75,665.1707654670702,895,665.1707654670702"
+           stroke="#edc968"
+           stroke-width="4.658469065859783"
+           id="path50" />
+        <title
+           id="title51">Rappi → Binge: 0.804</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g52">
+        <path
+           d="M452.5,680.8481941672568C673.75,680.8481941672568,673.75,643.1737269040109,895,643.1737269040109"
+           stroke="#639ea9"
+           stroke-width="4.6063220240777705"
+           id="path51" />
+        <title
+           id="title52">Slack → Enganchada en serio: 0.795</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g53">
+        <path
+           d="M452.5,689.9591192944055C673.75,689.9591192944055,673.75,647.2846520311596,895,647.2846520311596"
+           stroke="#557ae1"
+           stroke-width="3.6155282302195326"
+           id="path52" />
+        <title
+           id="title53">WhatsApp Business → Enganchada en serio: 0.624</title>
+      </g>
+      <g
+         style="mix-blend-mode: multiply;"
+         id="g54">
+        <path
+           d="M452.5,698.3834417047576C673.75,698.3834417047576,673.75,650.7089744415117,895,650.7089744415117"
+           stroke="#a578db"
+           stroke-width="3.2331165904847747"
+           id="path53" />
+        <title
+           id="title54">Banco Galicia → Enganchada en serio: 0.558</title>
+      </g>
+    </g>
+    <g
+       id="g78">
+      <text
+         x="891"
+         y="342.412766368377"
+         text-anchor="end"
+         id="text55"><tspan
+           alignment-baseline="middle"
+           x="891"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan55">Enganchada en serio</tspan></text>
+      <text
+         x="9"
+         y="200.76772033734625"
+         text-anchor="start"
+         id="text56"><tspan
+           alignment-baseline="middle"
+           x="9"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan56">Redes sociales</tspan></text>
+      <text
+         x="456.5"
+         y="132.9952359492693"
+         text-anchor="start"
+         id="text57"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan57">TikTok</tspan></text>
+      <text
+         x="9"
+         y="471.0947659821027"
+         text-anchor="start"
+         id="text58"><tspan
+           alignment-baseline="middle"
+           x="9"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan58">Streaming y entretenimiento</tspan></text>
+      <text
+         x="456.5"
+         y="355.5497972059486"
+         text-anchor="start"
+         id="text59"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan59">Max (HBO)</tspan></text>
+      <text
+         x="456.5"
+         y="468.1812914440224"
+         text-anchor="start"
+         id="text60"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan60">Instagram</tspan></text>
+      <text
+         x="456.5"
+         y="519.1460117169896"
+         text-anchor="start"
+         id="text61"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan61">WhatsApp</tspan></text>
+      <text
+         x="9"
+         y="581.156569883474"
+         text-anchor="start"
+         id="text62"><tspan
+           alignment-baseline="middle"
+           x="9"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan62">Navegación y búsqueda</tspan></text>
+      <text
+         x="9"
+         y="619.8493529904076"
+         text-anchor="start"
+         id="text63"><tspan
+           alignment-baseline="middle"
+           x="9"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan63">Finanzas y bancos</tspan></text>
+      <text
+         x="456.5"
+         y="558.6123092770231"
+         text-anchor="start"
+         id="text64"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan64">Mercado Pago</tspan></text>
+      <text
+         x="456.5"
+         y="585.401081568274"
+         text-anchor="start"
+         id="text65"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan65">Chrome</tspan></text>
+      <text
+         x="9"
+         y="645.363419815876"
+         text-anchor="start"
+         id="text66"><tspan
+           alignment-baseline="middle"
+           x="9"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan66">Compras</tspan></text>
+      <text
+         x="9"
+         y="664.0404300521471"
+         text-anchor="start"
+         id="text67"><tspan
+           alignment-baseline="middle"
+           x="9"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan67">Transporte y delivery</tspan></text>
+      <text
+         x="456.5"
+         y="606.5232086525461"
+         text-anchor="start"
+         id="text68"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan68">Google App</tspan></text>
+      <text
+         x="891"
+         y="662.412766368377"
+         text-anchor="end"
+         id="text69"><tspan
+           alignment-baseline="middle"
+           x="891"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan69">Binge</tspan></text>
+      <text
+         x="456.5"
+         y="621.9960728771003"
+         text-anchor="start"
+         id="text70"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan70">Mercado Libre</tspan></text>
+      <text
+         x="456.5"
+         y="635.9421876005922"
+         text-anchor="start"
+         id="text71"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan71">Google Maps</tspan></text>
+      <text
+         x="456.5"
+         y="649.3465525011266"
+         text-anchor="start"
+         id="text72"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan72">Uber</tspan></text>
+      <text
+         x="456.5"
+         y="661.1285649906649"
+         text-anchor="start"
+         id="text73"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan73">Airbnb</tspan></text>
+      <text
+         x="456.5"
+         y="671.215798622288"
+         text-anchor="start"
+         id="text74"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan74">Rappi</tspan></text>
+      <text
+         x="9"
+         y="677.6968389879612"
+         text-anchor="start"
+         id="text75"><tspan
+           alignment-baseline="middle"
+           x="9"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan75">Trabajo y productividad</tspan></text>
+      <text
+         x="456.5"
+         y="680.8481941672568"
+         text-anchor="start"
+         id="text76"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan76">Slack</tspan></text>
+      <text
+         x="456.5"
+         y="689.9591192944055"
+         text-anchor="start"
+         id="text77"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan77">WhatsApp Business</tspan></text>
+      <text
+         x="456.5"
+         y="698.3834417047576"
+         text-anchor="start"
+         id="text78"><tspan
+           alignment-baseline="middle"
+           x="456.5"
+           style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;"
+           id="tspan78">Banco Galicia</tspan></text>
+    </g>
+    <g
+       id="g81">
+      <text
+         x="897.5"
+         y="28.5"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#7b7b7b"
+         id="text79">Tipo de habito</text>
+      <text
+         x="2.5"
+         y="15.999999999999943"
+         text-anchor="middle"
+         style="font-family: Arial, sans-serif; font-size: 12px; fill: rgb(123, 123, 123); font-weight: bold;"
+         id="text80">Categoria</text>
+      <text
+         x="450"
+         y="-4"
+         text-anchor="middle"
+         style="font-family: Arial, sans-serif; font-size: 12px; fill: rgb(123, 123, 123); font-weight: bold;"
+         id="text81">App</text>
+    </g>
+  </g>
+</svg>
